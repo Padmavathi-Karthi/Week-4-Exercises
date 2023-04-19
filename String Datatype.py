@@ -50,3 +50,20 @@ def convert_distance(miles):
 print(convert_distance(12)) # Should be: 12 miles equals 19.2 km
 print(convert_distance(5.5)) # Should be: 5.5 miles equals 8.8 km
 print(convert_distance(11)) # Should be: 11 miles equals 17.6 km
+
+print(" ")
+
+# 3. Fill in the gaps in the nametag function so that it uses the format method to return first_name and the first initial of last_name followed by a period. For example, nametag("Jane", "Smith") should return "Jane S."
+
+def nametag(first_name, last_name):
+    return("{} {}.".format(first_name,last_name[:1]))
+
+
+print(nametag("Jane", "Smith")) 
+# Should display "Jane S." 
+print(nametag("Francesco", "Rinaldi")) 
+# Should display "Francesco R." 
+print(nametag("Jean-Luc", "Grand-Pierre")) 
+# Should display "Jean-Luc G." 
+
+print(" ")
