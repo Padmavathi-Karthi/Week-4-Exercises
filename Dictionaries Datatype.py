@@ -93,3 +93,39 @@ Tessas_guests = { "David":4, "Noemi":1, "Raj":2, "Adam":1, "Sakira":3, "Chidi":5
 print(combine_guests(Ricks_guests, Tessas_guests))
 # Should print:
 # {'David': 1, 'Noemi': 1, 'Raj': 4, 'Adam': 2, 'Sakira': 3, 'Chidi': 5, 'Camila': 3, 'Jamal': 3, 'Charley': 2, 'Titus': 1}
+
+print(" ")
+
+# 6. Use a dictionary to count the frequency of numbers in the given “text” string. Only numbers should be counted. Do not count blank spaces, letters, or punctuation. Complete the function so that input like "1001000111101" will return a dictionary that holds the count of each number that occurs in the string  {'1': 7, '0': 6}. 
+
+def count_numbers(text):
+  # Initialize a new dictionary.
+  dictionary = {} 
+  # Complete the for loop to iterate through each "text" character.
+  for i in text:
+    # Complete the if-statement using a string method to check if the
+    # character is a number.
+    if i.isnumeric():
+      # Complete the if-statement using a logical operator to check if 
+      # the number is not already in the dictionary.
+      if i not in dictionary:
+           # Use a dictionary operation to add the number as a key
+           # and set the initial count value to zero.
+           dictionary[i] = 1
+      # Use a dictionary operation to increment the number count value 
+      # for the existing key.
+      else:
+        dictionary[i] += 1
+  return dictionary
+
+print(count_numbers("1001000111101"))
+# Should be {'1': 7, '0': 6}
+
+print(count_numbers("Math is fun! 2+2=4"))
+# Should be {'2': 2, '4': 1}
+
+print(count_numbers("This is a sentence."))
+# Should be {}
+
+print(count_numbers("55 North Center Drive"))
+# Should be {'5': 2}
