@@ -131,3 +131,19 @@ print(format_address("1001 1st Ave"))
 
 print(format_address("55 North Center Drive"))
 # Should print "House number 55 on a street named North Center Drive"
+
+print(" ")
+
+# 6. Fill in the blank to complete the “highlight_word” function. This function should change the given “word” to its upper-case version in a given “sentence”. Complete the string method needed in this function so that a function call like "highlight_word("Have a nice day", "nice")" will return the output "Have a NICE day".
+
+def highlight_word(sentence, word):
+    # Complete the return statement using a string method.
+    return (sentence.replace(word,word.upper()))
+
+
+print(highlight_word("Have a nice day", "nice"))
+# Should print: "Have a NICE day"
+print(highlight_word("Shhh, don't be so loud!", "loud"))
+# Should print: "Shhh, don't be so LOUD!"
+print(highlight_word("Automating with Python is fun", "fun"))
+# Should print: "Automating with Python is FUN"
